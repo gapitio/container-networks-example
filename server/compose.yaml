@@ -1,0 +1,10 @@
+services:
+  server:
+    image: server
+    environment:
+      SERVER_SOCKET_ADDRESS: 0.0.0.0:3000
+
+networks:
+  default:
+    external: true
+    name: net-test
